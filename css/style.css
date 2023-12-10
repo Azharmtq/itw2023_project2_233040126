@@ -1,0 +1,5 @@
+.thumbnail, .slide {
+    width: 450px;
+    height: 150px;
+    display: grid;
+}
