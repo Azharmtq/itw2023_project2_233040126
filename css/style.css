@@ -1,5 +1,67 @@
-.thumbnail, .slide {
-    width: 450px;
-    height: 150px;
-    display: grid;
+.container {
+    position: relative;
+    background-color: #f8f9fa;
+    height: max-content;
 }
+
+.navbar {
+    height: max-content;
+    width: 100%;
+    color: white;
+    margin-bottom: -11px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-link{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.navbar .container-fluid{
+    background-color: rgb(42, 105, 222);
+    border-radius: 5px;
+}
+
+.navbar .container-fluid .navbar-brand img{
+    width: fit-content;
+    height: 30px;
+}
+
+.profil-singkat {
+    width: 20%;
+    height: max-content;
+    padding: 20px;
+    border-radius: 5px 0px 0px 5px;
+    text-align: left;
+    margin-bottom: 10vh;
+    border-right: 1px solid gray;
+  }
+  
+  .profil-singkat img {
+    width: 100%;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    border: 0.5px solid rgba(3, 3, 69,0.1);
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .product {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: max-content;
+    width: 80%;
+    gap: 5vh;
+    padding: auto;
+    margin-left: 0;
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+    padding-left: 5%;
+    }
