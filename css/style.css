@@ -117,7 +117,8 @@
       font-weight: bold;
     }
 
-    .embed-responsive {
+    iframe {
       margin: 5vh auto;
-  }
-  
+      object-position: center;
+      width: 100%;
+    }
