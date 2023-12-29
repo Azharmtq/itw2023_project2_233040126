@@ -8,57 +8,58 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-
+  <!-- header -->
+  <div class="header container-fluid">
+    <h1>Ez-Market</h1>
+  </div>
     <!-- container -->
   <div class="container">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="./profile.html"><img src="./img/orbit.png" alt="LOGO"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#">
+        <img src="./img/orbit.png" alt="" width="40" height="auto">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="./index.html#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./profile.html">Profil</a>
+            <a class="nav-link" href="./profile.html#profil">Profil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Kontak</a>
+            <a class="nav-link" href="./profile.html#kontak">Kontak</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Layanan</a>
+            <a class="nav-link" href="./profile.html#layanan">Layanan</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Katalog
+            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Kategori
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">PC</a></li>
-              <li><a class="dropdown-item" href="#">LAPTOP</a></li>
-              <li><a class="dropdown-item" href="#">AKSESORIS</a></li>
-              <li><a class="dropdown-item" href="#">KEAMANAN</a></li>
+              <li><a class="dropdown-item" href="#">Laptop</a></li>
+              <li><a class="dropdown-item" href="#">Aksesoris</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Keamanan</a></li>
             </ul>
           </li>
         </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Cari Produk" aria-label="Search">
+          <button class="btn btn-outline-warning" type="submit">🔍</button>
+        </form>
       </div>
     </div>
   </nav>
   <!-- Profile  -->
   <div class="container-fluid" id="profil">
-    <div class="myphotos">
-      <a href="#kontak">
-      <div>
-      <img class="image" src="./img/orbit.png" alt="">
-      </div>
-      <div class="overlay2">
-          <div class="text">Orbit Mandiri</div>
-      </div>
-      </a>
-    </div>
+    <center><img src="./img/orbit.png" alt=""></center>
     <div>
     <h3>Deskripsi</h2>
       <p>Perusahaan kami adalah perusahaan Nasional yang bergerak dalam bidang kelistrikan, teknologi informasi, lingkungan hidup dan seluruh elemen yang terhubung dengannya. Kami siap melayani kebutuhan kantor Bapak/Ibu di seluruh Indonesia</p>
@@ -67,6 +68,12 @@
   <!-- Layanan -->
   <div class="container-fluid" id="layanan">
     <h3>Layanan</h2>
+      <ul>
+        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>+62 817-433-746</a></li>
+        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>+62 817-433-746</a></li>
+      </ul>
+      
+      
   </div>
   <!-- Kontak -->
   <div class="container-fluid" id="kontak">
@@ -79,14 +86,17 @@
       <label for="exampleFormControlTextarea1" class="form-label">Pesan</label>
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
-    <button type="button" class="btn btn-primary">kirim</button>
+    <button type="button" class="btn btn-primary ">kirim</button>
   </div>
 
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31686.624582354!2d107.61048901562496!3d-6.911150499999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e75a77bd5987%3A0x11a5c145f05649a4!2sOrbit%20Mandiri%20Computer!5e0!3m2!1sid!2sid!4v1703654757413!5m2!1sid!2sid" width="350" height="350" style="border: 1px solid black;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
   
   <!-- Container Akhir -->
 </div>
-
+  <!-- footer -->
+  <div class="footer container-fluid" align="center"><p>
+    Copyright <a target="_blank" href="azharmtq.github.io">azharmtq.github.io</a> © 2023. All rights reserved.
+  </p></div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

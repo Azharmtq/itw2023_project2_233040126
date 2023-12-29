@@ -2,30 +2,22 @@
     position: relative;
     background-color: #f8f9fa;
     height: max-content;
+    margin: 0 auto;
+    padding: 0 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.5s;
 }
 
 .navbar {
-    height: max-content;
-    width: 100%;
-    color: white;
-    margin-bottom: -11px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+  border-radius: 5px;
 }
 
-.nav-link{
-    color: white;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.navbar .container-fluid{
-    background-color: rgb(42, 105, 222);
-    border-radius: 5px;
-}
-
-.navbar .container-fluid .navbar-brand img{
-    width: fit-content;
-    height: 30px;
+.nav-link {
+  color: #f8f9fa;
 }
 
 .profil-singkat {
@@ -66,55 +58,16 @@
     padding-left: 5%;
     }
 
-    .myphotos {
-      width: 20vh;
-      height: 20vh;
-      position: relative;
-      overflow: hidden;
-      border-radius: 100%;
-      border: 1px solid blue;
-      margin-top: 100px;
-      margin: auto;
-    }
-    
-    .image {
-      width: 20vh;
-      height: 20vh;
-      background-size: cover;
-      transition: filter 0.5s;
-      object-fit: cover;
-      object-position: center;
-      transform: translateX(-5px);
-    }
-    
-    .overlay2 {
-      position: absolute;
-      top: 0;
-      left: 0;
+    #profil {
       width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      transform: translateY(100%);
-      opacity: 0;
-      background: linear-gradient(rgba(255, 26, 26, 0), rgba(48, 82, 255, 0.8));
-      transition: opacity 0.7s, transform 1s;
+      margin: auto;
+      
     }
-    
-    .myphotos:hover .image {
-      filter: brightness(0.7);
-    }
-    
-    .myphotos:hover .overlay2 {
-      transform: translateY(0);
-      opacity: 1;
-    }
-    .text {
-      color: white;
-      font-size: 24px;
-      font-weight: bold;
+    #profil img {
+      width: 20vh;
+      object-fit: contain;
+      height: auto;
+      margin: 4vh auto;
     }
 
     iframe {
@@ -122,3 +75,34 @@
       object-position: center;
       width: 100%;
     }
+
+    .footer {
+      background-color: rgb(3, 28, 102);
+      color: #f8f9fa;
+      width: auto;
+      height: 5vh;
+      padding-top: 2vh;
+      padding-bottom: 7vh;
+      margin: 2vh 0 0 0;
+    }
+    .header {
+      background-color: rgb(3, 28, 102);
+      color: #f8f9fa;
+      width: auto;
+      height: 10vh;
+      padding-top: 0;
+      padding-bottom: 7vh;
+      margin: 0 0 4vh 0;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      }
+     }
+     
+     @media (max-width: 480px) {
+      .container {
+         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+      }
+     }
