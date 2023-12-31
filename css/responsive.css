@@ -1,0 +1,24 @@
+    /* Gaya CSS untuk perangkat mobile (hp) */
+    @media only screen and (max-width: 426px) {
+        .profil-singkat {
+            width: fit-content;
+            height: auto;
+            padding: 20px;
+            border-radius: 5px 0px 0px 5px;
+            text-align: left;
+            border-right: 1px solid gray;
+          }
+          .profil-singkat {
+            width: 100%;
+          }
+  }
+  
+    /* Gaya CSS untuk perangkat tablet */
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        
+  }
+  
+    /* Gaya CSS untuk perangkat dekstop */
+    @media only screen and (min-width: 1024px) {
+    
+  }
